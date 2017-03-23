@@ -5,7 +5,7 @@
   ### MSc. Jhon Osorio 
   
 Construcción del primer procesador en la materia Arquitectura de Computadores, con los 6 Componentes necesarios para este.
-Este procesador realizará unicamente las operaciones de suma, y algunas operaciones lógicas (AND, OR, XOR).  
+El procesador realizará unicamente las operaciones de suma, y algunas operaciones lógicas (AND, OR, XOR).  
   
   * Program Counter y Next Program Counter.
   * Adder.
