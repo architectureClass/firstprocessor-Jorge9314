@@ -1,4 +1,4 @@
-# Primer Procesador - 21 / 03 / 2017
+# Primer Procesador SPARC V8 Monociclo
 ### Realizado por: Jorge Mario Gil
 
 
