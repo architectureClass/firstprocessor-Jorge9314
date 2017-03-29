@@ -1,6 +1,7 @@
 # Primer Procesador SPARC V8 Monociclo
 ### Realizado por: Jorge Mario Gil
 
+![alt tag](/procesador.png)
 
 ## Arquitectura de Computadores 
   ### MSc. Jhon Osorio 
