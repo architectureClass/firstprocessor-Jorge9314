@@ -8,7 +8,7 @@ entity ProgramCounter is
            DataOut : out  STD_LOGIC_VECTOR (31 downto 0));
 end ProgramCounter;
 
-architecture Behavioral of ProgramCounter is
+architecture arq_ProgramCounter of ProgramCounter is
 
 begin
 
@@ -21,4 +21,4 @@ process(CLK, rst) begin
 
 end process;
 
-end Behavioral;
+end arq_ProgramCounter;

@@ -10,7 +10,7 @@ entity Adder is
            DataOut : out  STD_LOGIC_VECTOR (31 downto 0));
 end Adder;
 
-architecture Behavioral of Adder is
+architecture arq_Adder of Adder is
 
 --signal constante: std_logic_vector(31 downto 0):= "00000000000000000000000000000100";
 --signal aux: std_logic_vector(31 downto 0):=(others=>'0');
@@ -21,4 +21,4 @@ begin
 			DataOut<=Op2+Op1;
 	end process;
 
-end Behavioral;
+end arq_Adder;

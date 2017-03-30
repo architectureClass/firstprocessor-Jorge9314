@@ -14,7 +14,7 @@ entity RF is
            crs2 : out  STD_LOGIC_VECTOR (31 downto 0));
 end RF;
 
-architecture Behavioral of RF is
+architecture arq_RF of RF is
 
 type reg is array (0 to 31) of std_logic_vector (31 downto 0);
  
@@ -51,4 +51,4 @@ process(rs1,rs2,rd,dwr, reset)
 		end if;
 	end process;
 
-end Behavioral;
+end arq_RF;
