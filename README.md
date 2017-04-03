@@ -14,9 +14,9 @@ Construcción del primer procesador en la materia Arquitectura de Computadores, 
 
   * [Program Counter y Next Program Counter](/ProgramCounter.vhd)
   * [Adder](/Adder.vhd)
-  * Instruction Memory.
+  * [Instruction Memory](/IM.vhd)
   * [Register File](/RegisterFile.vhd)
-  * Control Unit.
-  * Arithmetic Logic Unit (ALU).
+  * [Control Unit](/CU.vhd)
+  * [Arithmetic Logic Unit (ALU)](/ALU.vhd).
 
 El procesador realizará unicamente las operaciones de (SUB y ADD), y algunas operaciones lógicas (AND, OR).  
