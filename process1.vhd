@@ -52,19 +52,21 @@ component RF
 end component;
 
 component ALU
-    Port ( crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
+    Port ( Op1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           Op2 : in  STD_LOGIC_VECTOR (31 downto 0);
            aluop : in  STD_LOGIC_VECTOR (5 downto 0);
            DWR : out  STD_LOGIC_VECTOR (31 downto 0)
 		  );
 end component;
 
+signal instructionMemoryOut : STD_LOGIC_VECTOR (31 downto 0) := x"00000000";
 signal programCounterOut : STD_LOGIC_VECTOR (31 downto 0) := x"00000000";
 signal nextprogramCounterOut : STD_LOGIC_VECTOR (31 downto 0) := x"00000000";
 signal adderOut : STD_LOGIC_VECTOR (31 downto 0) := x"00000000";
-signal crs1_aux: STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');			
-signal crs2_aux: STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');	
-signal aluOut : STD_LOGIC_VECTOR (5 downto 0);
+signal Op1_aux: STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');			
+signal Op2_aux: STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');	
+signal aluOut : STD_LOGIC_VECTOR (31 downto 0);
+signal ucOut : STD_LOGIC_VECTOR (5 downto 0);
 
 begin
 
@@ -101,20 +103,20 @@ RegisterFile0 : RF
            rd => InstructionMemoryOut(29 downto 25),
 			  dwr => aluOut,
 			  reset => rst,
-           crs1 => crs1_aux,
-           crs2 => crs2_aux
+           crs1 => Op1_aux,
+           crs2 => Op2_aux
 		  );
 
  UnidadControl0 : CU 
     Port map( op => InstructionMemoryOut(31 downto 30) ,
-           op3 => InstructionMemoryOut(27 downto 19),
-           aluop => aluOut
+           op3 => InstructionMemoryOut(24 downto 19),
+           aluop => ucOut
 			);
 
  ALU0	: ALU
-    Port map ( crs1 => crs1_aux,
-           crs2 => crs2_aux,
-           aluop => aluOut,
+    Port map ( Op1 => Op1_aux,
+           Op2 => Op2_aux,
+           aluop => ucOut,
            DWR => aluOut
 		  );
 

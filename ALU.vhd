@@ -1,9 +1,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ALU is
-    Port ( crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
+    Port ( Op1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           Op2 : in  STD_LOGIC_VECTOR (31 downto 0);
            aluop : in  STD_LOGIC_VECTOR (5 downto 0);
            DWR : out  STD_LOGIC_VECTOR (31 downto 0));
 end ALU;
@@ -11,7 +12,7 @@ end ALU;
 architecture arq_ALU of ALU is
 
 begin
-	process (crs1, crs2, aluop) 
+	process (Op1, Op2, aluop) 
 	begin
 		case aluop is
 			when "000000" => -- Add
