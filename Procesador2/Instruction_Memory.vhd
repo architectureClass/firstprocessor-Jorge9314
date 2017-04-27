@@ -3,14 +3,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use std.textio.all;
 
-entity IM is
-    Port ( clk : in STD_LOGIC;
+entity Instruction_Memory is
+    Port ( --clk : in STD_LOGIC;
 			  Address_In : in  STD_LOGIC_VECTOR (31 downto 0); -- Entra la direccion de la instruccion en la memoria --
            Reset : in  STD_LOGIC; -- Cuando vale 1 resetea la instruccion de salida a ceros --
            Instruction_Out : out  STD_LOGIC_VECTOR (31 downto 0)); -- devuelve la instruccion a ejecutar --
-end IM;
+end Instruction_Memory;
 
-architecture arq_IM of IM is
+architecture arq_Instruction_Memory of Instruction_Memory is
 	-- rom_type = tipo de memoria --
 	type rom_type is array (0 to 31) of std_logic_vector (31 downto 0); -- Es la matriz que almacena 32 instrucciones cada una de 32 bits --
 	
@@ -30,22 +30,23 @@ architecture arq_IM of IM is
 	end function;
 	
 	-- Creamos la memoria que va a ser del tipo rom_type --
-	signal instructions : rom_type := InitRomFromFile("test_ADD_SUB.data");
+	signal instructions : rom_type := InitRomFromFile("test_Prueba.data");
 	-- y iniciamos la memoria con las instrucciones almacenadas en el archivo Ejemplo: "test.data" --
 	
 begin
 
-	process(clk, Reset, Address_In, instructions)
+	process(Reset, Address_In, instructions)
 	begin
 		
-		if rising_edge(clk) then
+		--if rising_edge(clk) then
 			if Reset = '1' then
 				Instruction_Out <= (others => '0');
 			else
-				Instruction_Out <= instructions(conv_integer(Address_In(5 downto 0)));
+				Instruction_Out <= instructions(conv_integer(Address_In(4 downto 0)));
 			end if;
-		end if;
+		--end if;
 
 	end process;
 
-end arq_IM;
+end arq_Instruction_Memory;
+
