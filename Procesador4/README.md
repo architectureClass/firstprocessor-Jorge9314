@@ -3,7 +3,7 @@
 
 ![Esquema del Procesador](/Procesador4/Procesador4.png)
   
-Construcción del primer procesador en la materia Arquitectura de Computadores, con los 6 Componentes necesarios para este.
+Construcción del primer procesador en la materia Arquitectura de Computadores, con los 11 Componentes necesarios para este.
 
   * [Program Counter y Next Program Counter](/Procesador4/Program_Counter.vhd)
   * [Adder](/Procesador4/Adder.vhd)
