@@ -1,0 +1,58 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis_TB_isim_beh.exe -prj C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis_TB_beh.prj work.ProcesadorSeis_TB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/WindowsManager.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/SEU30.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/SEU22.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/SEU.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/RegisterFile.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/PSRModifer.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/PSR.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProgramCounter.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/MUXRFSC.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/MUXRFD.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/MUXPCSC.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/MUX.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/InstructionMemory.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/DataMemory.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ControlUnit.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/Adder.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package std_logic_signed
+Compiling architecture arq_programcounter of entity ProgramCounter [programcounter_default]
+Compiling architecture arq_adder of entity Adder [adder_default]
+Compiling architecture arq_instructionmemory of entity InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity SEU22 [seu22_default]
+Compiling architecture behavioral of entity SEU30 [seu30_default]
+Compiling architecture arq_windowsmanager of entity WindowsManager [windowsmanager_default]
+Compiling architecture arq_psr of entity PSR [psr_default]
+Compiling architecture behavioral of entity MUXRFD [muxrfd_default]
+Compiling architecture arq_rf of entity RF [rf_default]
+Compiling architecture arq_seu of entity SEU [seu_default]
+Compiling architecture arq_controlunit of entity ControlUnit [controlunit_default]
+Compiling architecture arq_mux of entity MUX [mux_default]
+Compiling architecture arq_alu of entity ALU [alu_default]
+Compiling architecture arq_psrmodifer of entity PSRModifer [psrmodifer_default]
+Compiling architecture arq_muxpcsc of entity MUXPCSC [muxpcsc_default]
+Compiling architecture behavioral of entity DataMemory [datamemory_default]
+Compiling architecture arq_muxrfsc of entity MUXRFSC [muxrfsc_default]
+Compiling architecture behavioral of entity ProcesadorSeis [procesadorseis_default]
+Compiling architecture behavior of entity procesadorseis_tb
+Time Resolution for simulation is 1ps.
+Waiting for 18 sub-compilation(s) to finish...
+Compiled 44 VHDL Units
+Built simulation executable C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis_TB_isim_beh.exe
+Fuse Memory Usage: 37652 KB
+Fuse CPU Usage: 623 ms

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis.xst" -ofn "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis.syr" 
+xst -intstyle ise -ifn "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis.xst" -ofn "C:/Users/utp.CRIE/Desktop/firstprocessor-juanoc097/procesador/ProcesadorSeis.syr" 
